@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <rect width="100" height="100" rx="26" fill="#070711" stroke="url(#glowGrad)" stroke-width="3"/>
+  <circle cx="50" cy="50" r="38" fill="#111122" opacity="0.8"/>
+  <text x="50" y="62" font-family="'Space Grotesk', system-ui, sans-serif" font-size="34" font-weight="800" text-anchor="middle" fill="url(#glowGrad)" filter="url(#glow)">DS</text>
+  <circle cx="78" cy="24" r="4" fill="#06B6D4"/>
+</svg>
